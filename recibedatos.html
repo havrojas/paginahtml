@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			function getUrlVars() {
+				  var vars = {};
+				  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, 
+				  function(m,key,value) {
+					vars[key] = value;
+				  });
+				  return vars;
+				}
+		
+				var nombre = getUrlVars()["fname"];
+				var apellido= getUrlVars()["lname"];
+				var colorp = getUrlVars()["color"];
+				var tallap= getUrlVars()["talla"];
+				var ops=0;
+				var ad1=getUrlVars()["empaque"];
+				if(ad1!=undefined) ops+=4;
+				var ad2=getUrlVars()["nota"];
+				if(ad2!=undefined) ops+=2;
+				var ad3=getUrlVars()["prueba"];
+				if(ad3!=undefined) ops++;
+				//alert("chk= " +ops+": "+ ad1+ " - " +ad2 + " - "+ad3);
+				//alert("fname= " + nombre);
+		</script>         
+	</head>
+<body>
+
+<h2>Pedido Recibido</h2>
+
+<p>Recibe datos</p>
+
+<h3> Cliente</h3>
+<p id="Nombre">    </p>
+
+<h4>Pedido</h4>
+<p id="detalle">   </p>
+
+<script>
+	document.getElementById("Nombre").innerHTML=nombre+" "+apellido;
+document.getElementById("detalle").innerHTML="El color es:  "+ colorp +", la talla es:  " + tallap + " , " + ad1 + " " + ad2 + " " + ad3;
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Registrar Pedido</h2>
+
+<form name="enviaD" action="recibedatos.html" method="get">
+ 
+  <label for="fname">Nombre:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Apellido:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  
+  <h3><label for="lcolor">Elige tu color favorito</label> </h3> 
+  <input type="radio" id="rojo" name="color" value="rojo">
+  <label for="rojo">Rojo</label>
+  <input type="radio" id="azul" name="color" value="azul">
+  <label for="azul">Azul</label>
+  <input type="radio" id="otro" name="color" value="otro">
+  <label for="otro">Otro color</label>
+  
+  
+  <h3><label for="lTalla">Elige tu talla</label> </h3> 
+  <input type="radio" id="peq" name="talla" value="ch">
+  <label for="peq">Pequeño</label>
+  <input type="radio" id="med" name="talla" value="m">
+  <label for="med">Mediano</label>
+  <input type="radio" id="gde" name="talla" value="g">
+  <label for="gde">Grande</label>
+  <input type="radio" id="xgde" name="talla" value="xg">
+  <label for="xgde">Extra grande</label>
+  
+  <h3><label for="Adicionales"> Elige las opciones de personalización</label></h3>
+  <input type="checkbox" id="emCaja" name="empaque" value="caja"> Empaque de cartón reciclado <br>
+  <input type="checkbox" id="emPapel" name="empaque" value="papel"> Moño de papel <br>
+  <input type="checkbox" id="emPlasti" name="empaque" value="plastico">Agregar confeti dentro <br>
+
+  <br>
+
+  <input type="checkbox" id="nota" name="nota" value="promo">
+  <label for="nota"> Envíenme una promoción para compartir con amigos</label><br>
+  <input type="checkbox" id="prueba" name="prueba" value="pbag">
+  <label for="prueba"> Incluyan muestras gratis de otros productos que me puedan gustar</label>
+  <p>
+    <input type="submit" value="Enviar"/>
+  </p>
+
+</form> 
+
+<p>Enviamos datos</p>
+
+</body>
+</html>
